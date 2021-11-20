@@ -7,7 +7,7 @@ configure :development do
  end
 
  get '/' do
-  'Oh my god this is a sinatra aplication that is Dockerized'
+  send_file './public/index.html'
  end
 
 end
