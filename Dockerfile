@@ -1,10 +1,8 @@
 FROM ruby:alpine
 
-WORKDIR /Sinatra
-COPY . /Sinatra
+WORKDIR /usr/src/sinatra
+COPY ./ ./
 
 RUN bundle install
-
-EXPOSE 4567
 
 CMD ["/bin/bash"]

@@ -7,7 +7,7 @@ configure :development do
  end
 
  get '/' do
-  send_file './public/index.html'
+  send_file 'index.html'
  end
 
 end

@@ -2,10 +2,11 @@ version: "3.8"
 services:
   sinatra-app:
     container_name: sinatra-app
-    image: 3.0.2-alpine3.14
-    working_dir: /app
+    # image: alpine
+    build: ./
+    working_dir: /usr/src/sinatra
     command: bundle exec rackup --host 0.0.0.0 -p 4567
     ports:
       - "4567:4567"
     volumes:
-      - ./:usr/src/sinatra
+      - ./:/usr/src/sinatra

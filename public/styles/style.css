@@ -9,5 +9,6 @@ body {
 h1 {
   font-size: 2em;
   font-weight: 200;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
 }
