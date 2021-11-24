@@ -7,6 +7,6 @@ services:
     working_dir: /usr/src/sinatra
     command: bundle exec rackup --host 0.0.0.0 -p 4567
     ports:
-      - "4567:4567"
+      - "3000:4567"
     volumes:
       - .:/usr/src/sinatra
