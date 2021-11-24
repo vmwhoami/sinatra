@@ -1,4 +1,7 @@
-let heading = document.querySelector('h1');
-
-console.log(heading);
-heading.style.color = 'red';
+new Vue({
+  el: "#app",
+  data: {
+    message: "🐵 Hello World 🔮",
+    timestamp: `Timestamp ${new Date().toLocaleString()}`,
+  },
+})
