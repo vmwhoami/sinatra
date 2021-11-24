@@ -9,4 +9,4 @@ services:
     ports:
       - "4567:4567"
     volumes:
-      - ./:/usr/src/sinatra
+      - .:/usr/src/sinatra
